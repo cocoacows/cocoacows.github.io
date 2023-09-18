@@ -1,0 +1,3 @@
+"0","# your code goes below (make sure to edit comment)"
+"0",""
+"0","ggplot(ChickWeight, aes(x = Time, y = weight, color = Diet)) + geom_point(stat = ""summary"", fun = mean, size = 5, shape = ""x"") + xlab(""Diet"") + ylab(""Average Weight (g)"") + geom_line(stat=""summary"", aes(color = Diet))"

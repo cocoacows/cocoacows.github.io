@@ -1,0 +1,4 @@
+"0","# Visualize the first ten rows of the dataset
+head(ChickWeight,10)
+"
+"0",""

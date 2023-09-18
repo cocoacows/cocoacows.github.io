@@ -1,0 +1,122 @@
+]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ .15*100
+.15*100: command not found
+]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ 2023-08-23T18:34:17.194733Z [rsession-nw7688] ERROR system error 2 (No such file or directory) [description: Error changing directory: '/proc/500688/cwd']; OCCURRED AT rstudio::core::Error rstudio::core::system::ChildProcess::run() src/cpp/core/system/PosixChildProcess.cpp:743; LOGGED FROM: rstudio::core::Error rstudio::core::system::ChildProcess::run() src/cpp/core/system/PosixChildProcess.cpp:743
+]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ mkdir worksheet
+]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ ls /stor/work/SDS322E_AF_Fall2023/worksheets?
+ls: cannot access '/stor/work/SDS322E_AF_Fall2023/worksheets?': No such file or directory
+]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ ls /stor/work/SDS322E_AF_Fall2023/worksheets?[K[Ks/
+GettingStarted.R  WS1.Rmd
+]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ cp *[K/star/work[K[K[K[K[K[K[K[K[K[K/stor/work/SDS322E_AF_Fall2023/worksheets/GettingStarted.R `[K~/worksheet/.
+]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ [K]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ [K]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ [K]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ 2023-08-28T18:21:52.002788Z [rsession-nw7688] ERROR system error 2 (No such file or directory) [description: Error changing directory: '/proc/1523299/cwd']; OCCURRED AT rstudio::core::Error rstudio::core::system::ChildProcess::run() src/cpp/core/system/PosixChildProcess.cpp:743; LOGGED FROM: rstudio::core::Error rstudio::core::system::ChildProcess::run() src/cpp/core/system/PosixChildProcess.cpp:743
+]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ cp/s[K[K /stor[K[K[K[K[K[K[K[Kcp /stor/work/
+cp: missing destination file operand after '/stor/work/'
+Try 'cp --help' for more information.
+]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ SDS322EAF_Fall2023/worksheets/WS1.Rmd ~
+bash: SDS322EAF_Fall2023/worksheets/WS1.Rmd: No such file or directory
+]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ cp/s[K[K /stor/worl/[K[K[Krk/SDS322EAF_Fall2023/worksheets/WS1.Rmd ~
+cp: cannot stat '/stor/work/SDS322EAF_Fall2023/worksheets/WS1.Rmd': No such file or directory
+]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ 
+]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ cp /stor/work/SDS322E_AF_Fall2023/[K/worksheets/S[KWS1/Rmd ~
+cp: cannot stat '/stor/work/SDS322E_AF_Fall2023/worksheets/WS1/Rmd': No such file or directory
+]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ cp /stor/work/SDS322E_AF_Fall2023/worksheets/WS1/Rmd[K[K[K[K.RM[Kmd ~
+]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ cp /stor/work/SDS322E_AF_Fall2023/worksheets/WS1.Rmd ~
+]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ [K]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ [K]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ cp /stor/work/SDS322E
+cp: missing destination file operand after '/stor/work/SDS322E'
+Try 'cp --help' for more information.
+]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ cp /stor/work/SDS322E
+SDS322E_AF/            SDS322E_AF_Fall2023/   SDS322E_LG/            SDS322E_LG_Spring2023/ SDS322E_RP_Spring2023/ 
+SDS322EAF/             SDS322E_AL/            SDS322E_LG_Fall2022/   SDS322ENW/             SDS322E_SR/            
+SDS322EAF_Fall2021/    SDS322E_AL_Fall2022/   SDS322E_LG_Fall2023/   SDS322ENW_Fall2021/    SDS322E_SR_Fall2023/   
+SDS322E_AF_Fall2022/   SDS322E_AL_Spring2022/ SDS322E_LG_Spring2022/ SDS322E_RP/            
+]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ cp /stor/work/SDS322E[K]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ cp /stor/work/SDS322E[K]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ cp /stor/work/SDS322Egit clonme[K[Ke https://github.com/cocoacows/NewReportV2
+cp: target 'https://github.com/cocoacows/NewReportV2' is not a directory
+]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ cd _ [K[K~ git clone https://github.com/wjamesTMC/ds-education-visualization
+bash: cd: too many arguments
+]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ cp /path/to/file /path/to/destination/folder/
+cp: cannot stat '/path/to/file': No such file or directory
+]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ • Run cp /stor/work/SDS322E_AF_Fall2023/worksheets/WS1.Rmd ~[K]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ • Run cp /stor/work/SDS322E_AF_Fall2023/worksheets/WS1.Rmd ~[Acp /path/to/file /path/to/dest[15Pination/folder/
+cp: cannot stat '/path/to/file': No such file or directory
+]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ [K]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ cp /path/to/file /path/to/destination/folder//stor.[Kj[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kstor/o[Kworl[Kl[Kk/SDS322E_AF_Fall2023/worksheets/W[KS[KWS1/[K.RM[Kmd ![K~
+]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ cp /stor/work/SDS322E_AF_Fall2023/worksheets/WS1.Rmd ~
+]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ [K]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ [K]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ [K]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ [K]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ cp /stor/work/SDS322E_AF_Fall2023/worksheets/WS1.Rmd ~[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@h[1@o[1@m[1@e[1@w[1@o[1@r[1@k[C[C[C[C[1P[1P[1@H[1@W
+]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ 2023-08-30T18:07:33.705174Z [rsession-nw7688] ERROR system error 2 (No such file or directory) [description: Error changing directory: '/proc/1225272/cwd']; OCCURRED AT rstudio::core::Error rstudio::core::system::ChildProcess::run() src/cpp/core/system/PosixChildProcess.cpp:743; LOGGED FROM: rstudio::core::Error rstudio::core::system::ChildProcess::run() src/cpp/core/system/PosixChildProcess.cpp:743
+]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ co /stor.work[K[K[K[K[K/wi[Kork/SDS322E_AF_Fall2023/worlse[Khet[Kets[K[K[K[K[K[K[Kksheets/WS5.R ~worksheet/.
+
+Command 'co' not found, but can be installed with:
+
+apt install rcs
+Please ask your administrator.
+
+]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ co /stor/work/SDS322E_AF_Fall2023/worksheets/WS5.R ~worksheet/.[1P[C[1P[1@c[1@p
+cp: cannot create regular file '~worksheet/.': No such file or directory
+]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ cp /stor/work/SDS322E_AF_Fall2023/worksheets/WS5.R ~worksheet/.[C/worksheet/.
+]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ 2023-09-06T18:08:27.846422Z [rsession-nw7688] ERROR system error 2 (No such file or directory) [description: Error changing directory: '/proc/3398447/cwd']; OCCURRED AT rstudio::core::Error rstudio::core::system::ChildProcess::run() src/cpp/core/system/PosixChildProcess.cpp:743; LOGGED FROM: rstudio::core::Error rstudio::core::system::ChildProcess::run() src/cpp/core/system/PosixChildProcess.cpp:743
+]0;/stor/home/nw7688]0;nw7688@educcomp01: ~[01;32mnw7688@educcomp01[00m:[01;34m~[00m$ cp /stor/work/SDS322E_AF_Fall2023/worksheets/WS6.R ~/
+]0;/stor/home/nw7688]0;nw7688@educcomp01: ~[01;32mnw7688@educcomp01[00m:[01;34m~[00m$ worksheet/ .
+bash: worksheet/: Is a directory
+]0;/stor/home/nw7688]0;nw7688@educcomp01: ~[01;32mnw7688@educcomp01[00m:[01;34m~[00m$ cp /stor/work/SDS322E_AF_Fall2023/worksheets/WS6.R ~/
+]0;/stor/home/nw7688]0;nw7688@educcomp01: ~[01;32mnw7688@educcomp01[00m:[01;34m~[00m$ worksheet/[K[K[K[K[K[K[K[K[K[Kcp /stor/work/SDS322E_AF_Fall2023/worksheets/WS6.R ~/worksheet/ .
+cp: -r not specified; omitting directory '/stor/home/nw7688/worksheet/'
+cp /stor/work/SDS322E_AF_Fall2023/homeworks/HW1.Rmd ~
+]0;/stor/home/nw7688]0;nw7688@educcomp01: ~[01;32mnw7688@educcomp01[00m:[01;34m~[00m$ cp /stor/work/SDS322E_AF_Fall2023/homeworks/HW1.Rmd ~[1@2[C[1P
+]0;/stor/home/nw7688]0;nw7688@educcomp01: ~[01;32mnw7688@educcomp01[00m:[01;34m~[00m$ cp /stor/work/SDS322E_AF_Fall2023/homeworks/HW2.Rmd ~[1P[1@W[1@3[C[1P
+cp /stor/work/SDS322E_AF_Fall2023/worksheets/WS6.R ~/worksheet/ [C[C[C[C[C[1P[1@7
+]0;/stor/home/nw7688]0;nw7688@educcomp01: ~[01;32mnw7688@educcomp01[00m:[01;34m~[00m$ cp /stor/work/SDS322E_AF_Fall2023/worksheets/WS6.R ~/worksheet/ [K[K[K[K[K[K[K[K[K[K[K[K[1P[1@7
+]0;/stor/home/nw7688]0;nw7688@educcomp01: ~[01;32mnw7688@educcomp01[00m:[01;34m~[00m$ cp /stor/work/SDS322E_AF_Fall2023/worksheets/WS8.R ./
+]0;/stor/home/nw7688]0;nw7688@educcomp01: ~[01;32mnw7688@educcomp01[00m:[01;34m~[00m$ worksheet/[K[K[K[K[K[K[K[K[K[Kcp /stor/work/SDS322E_AF_Fall2023/worksheets/WS8.R ./[K[K[K
+cp: missing destination file operand after '/stor/work/SDS322E_AF_Fall2023/worksheets/WS8.R'
+Try 'cp --help' for more information.
+]0;/stor/home/nw7688]0;nw7688@educcomp01: ~[01;32mnw7688@educcomp01[00m:[01;34m~[00m$ cp /stor/work/SDS322E_AF_Fall2023/worksheets/WS8.R./workeet/
+cp: missing destination file operand after '/stor/work/SDS322E_AF_Fall2023/worksheets/WS8.R./workeet/'
+Try 'cp --help' for more information.
+]0;/stor/home/nw7688]0;nw7688@educcomp01: ~[01;32mnw7688@educcomp01[00m:[01;34m~[00m$ cp /stor/work/SDS322E_AF_Fall2023/worksheets/WS8.R./workeet/[K[K[K[Ksheet/
+cp: missing destination file operand after '/stor/work/SDS322E_AF_Fall2023/worksheets/WS8.R./worksheet/'
+Try 'cp --help' for more information.
+]0;/stor/home/nw7688]0;nw7688@educcomp01: ~[01;32mnw7688@educcomp01[00m:[01;34m~[00m$ cp /stor/work/SDS322E_AF_Fall2023/worksheets/WS8.R./worksheet/[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K8 ~TR[K[KR[K[K[K[K8.R ~
+cp /stor/work/SDS322E_AF_Fall2023/homeworks/HW2.Rmd[C[C[1P.Rmd3.Rmd[K]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ cp /stor/work/SDS322E_AF_Fall2023/homeworks/HW3.Rmd[K]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ cp /stor/work/SDS322E_AF_Fall2023/homeworks/HW3.Rmd[1P.Rmd4.Rmd
+cp: missing destination file operand after '/stor/work/SDS322E_AF_Fall2023/homeworks/HW4.Rmd'
+Try 'cp --help' for more information.
+]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ cp /stor/work/SDS322E_AF_Fall2023/homeworks/HW3.Rmd ~
+]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ 
+]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ cp /stor/work/SDS322E_AF_Fall2023/homeworks/HW3.Rmd ~[1P[1@4[1P[C[C[1P[1P[1@W[1@4[1@.
+]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ [K]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ [K]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ ls /stor/work/SDS322E_AF_Fall2023/worksheets/WS10.Rmd ~[C[1P[1P[1@c[1@p
+cp: cannot stat '/stor/work/SDS322E_AF_Fall2023/worksheets/WS10.Rmd': No such file or directory
+]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ cp /stor/work/SDS322E_AF_Fall2023/worksheets/WS8.R ~[1P[1@S[1@1[1@0[C[1P
+cp: cannot stat '/stor/work/SDS322E_AF_Fall2023/worksheets/WS10.R': No such file or directory
+]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ cp /stor/work/SDS322E_AF_Fall2023/worksheets/WS10.R ~[C[1@S[1@.[C[1P
+cp: cannot stat '/stor/work/SDS322E_AF_Fall2023/worksheets/WS.10.R': No such file or directory
+]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ ls /stor/work/SDS322E_AF_Fall2023/worksheets/[1P[C[1P /stor/work/SDS322E_AF_Fall2023/worksheets/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cc /stor/work/SDS322E_AF_Fall2023/worksheets/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cp /stor/work/SDS322E_AF_Fall2023/worksheets/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C /stor/work/SDS322E_AF_Fall2023/worksheets/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P/stor/work/SDS322E_AF_Fall2023/worksheets/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ cp /stor/work/SDS322E_AF_Fall2023/worksheets/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ cp /stor/work/SDS322E_AF_Fall2023/worksheets/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ cp /stor/work/SDS322E_AF_Fall2023/worksheets/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ cp /stor/work/SDS322E_AF_Fall2023/worksheets/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ cp /stor/work/SDS322E_AF_Fall2023/worksheets/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ cp /stor/work/SDS322E_AF_Fall2023/worksheets/[A]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+cp: missing destination file operand after '/stor/work/SDS322E_AF_Fall2023/worksheets/'
+Try 'cp --help' for more information.
+]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ mkdir ~/homepage
+]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ cd[K[Kls -a
+ [0m[01;34m.[0m              [01;34m'class WS'[0m   [01;34m.local[0m
+ [01;34m..[0m              [01;34m.config[0m     .profile
+ .bash_history   [01;34mhomepage[0m    [01;34mR[0m
+ .bash_logout    [01;34mHW[0m          [01;34mworksheet[0m
+ .bashrc         HW4.Rmd     [34;42m.zfs[0m
+]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ git init
+Initialized empty Git repository in /stor/home/nw7688/.git/
+]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ ls
+[0m[01;34m'class WS'[0m   [01;34mHW[0m        [01;34mR[0m
+ [01;34mhomepage[0m    HW4.Rmd   [01;34mworksheet[0m
+]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ ls -a
+ [0m[01;34m.[0m               [01;34m.config[0m    .profile
+ [01;34m..[0m              [01;34m.git[0m       [01;34mR[0m
+ .bash_history   [01;34mhomepage[0m   [01;34mworksheet[0m
+ .bash_logout    [01;34mHW[0m         [34;42m.zfs[0m
+ .bashrc         HW4.Rmd
+[01;34m'class WS'[0m       [01;34m.local[0m
+]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ [K]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ ls -l
+total 43
+drwxr-xr-x 2 nw7688 SDS322E_AF_Fall2023    7 Sep 11 09:44 [0m[01;34m'class WS'[0m
+drwxr-xr-x 2 nw7688 SDS322E_AF_Fall2023    3 Sep 18 14:54  [01;34mhomepage[0m
+drwxr-xr-x 2 nw7688 SDS322E_AF_Fall2023    8 Sep 15 17:47  [01;34mHW[0m
+-rw-r--r-- 1 nw7688 SDS322E_AF_Fall2023 6446 Sep 18 13:51  HW4.Rmd
+drwxr-xr-x 3 nw7688 SDS322E_AF_Fall2023    3 Aug 21 13:19  [01;34mR[0m
+drwxr-xr-x 2 nw7688 SDS322E_AF_Fall2023    6 Sep 18 13:52  [01;34mworksheet[0m
+]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ ~/hoom[K[K,e[K[Kmepage
+bash: /stor/home/nw7688/homepage: Is a directory
+]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ [K]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ [K]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ git add . 
+warning: could not open directory '.zfs/shares/': Stale file handle

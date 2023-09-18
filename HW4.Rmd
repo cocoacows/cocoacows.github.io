@@ -1,0 +1,171 @@
+---
+title: "HW 4"
+output: html_document
+---
+
+```{r global_options, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, eval = TRUE,  
+                      warning = FALSE, message = FALSE, 
+                      fig.align = "center",
+                      R.options = list(max.print=100))
+
+# Edit the file starting below
+```
+
+### Enter your name and EID here:
+
+**You will submit this homework assignment as a HTML file on Canvas.**
+
+*For all questions, include the R commands/functions that you used to find your answer (show R chunk). Answers without supporting code will not receive credit. Write full sentences to describe your findings.*
+
+------------------------------------------------------------------------
+
+### Question 1: (2 pts)
+
+All subsequent code will be done using `dplyr`, so we need to load this package. We also want to look at the `penguins` dataset which is inside the `palmerpenguins` package:
+
+```{r message=FALSE}
+# Call dplyr and ggplot2 packages within tidyverse
+library(tidyverse)
+
+# Paste and run the following uncommented code into your console: 
+# install.packages("palmerpenguins")
+
+# Save the data as a dataframe
+penguins <- as.data.frame(palmerpenguins::penguins)
+```
+
+Using a `dplyr` function, pick all the rows/observaions in the `penguins` dataset from the year 2007 and save the result as a new object called `penguins_2007`. Compare the number of observations/rows in the original `penguins` dataset with your new `penguins_2007` dataset.
+
+```{r}
+# your code goes below (make sure to edit comment)
+
+```
+
+**Your answer goes here. Write sentences in bold.**
+
+------------------------------------------------------------------------
+
+### Question 2: (2 pts)
+
+Using `dplyr` functions on `penguins_2007`, report the number of observations for each species-island combination (note that you'll need to `group_by`). Which species appears on all three islands? 
+
+```{r}
+# your code goes below (make sure to edit comment)
+
+```
+
+**Your answer goes here. Write sentences in bold.**
+
+------------------------------------------------------------------------
+
+### Question 3: (2 pts)
+
+Using `dplyr` functions on `penguins_2007`, create a new variable that contains the ratio of `bill_length_mm` to `bill_depth_mm` (call it `bill_ratio`). *Once you checked that your variable is created correctly*, overwrite `penguins_2007` so it contains this new variable.
+
+```{r}
+# your code goes below (make sure to edit comment)
+
+```
+
+Are there any cases in the `penguins_2007` dataset for which the `bill_ratio` exceeds 3.5? If so, for which species of penguins is this true?
+
+```{r}
+# your code goes below (make sure to edit comment)
+
+```
+
+**Your answer goes here. Write sentences in bold.**
+
+------------------------------------------------------------------------
+
+### Question 4: (2 pts)
+
+Using `dplyr` functions on `penguins_2007`, find the three penguins with the smallest bill ratio for *each species*. Only display the information about `species`, `sex`, and `bill_ratio`. Does the same sex has the smallest bill ratio across species?
+
+```{r}
+# your code goes below (make sure to edit comment)
+
+```
+
+**Your answer goes here. Write sentences in bold.**
+
+------------------------------------------------------------------------
+
+### Question 5: (2 pts)
+
+Using `dplyr` functions on `penguins_2007`, calculate the mean and standard deviation of `bill_ratio` for each species. Drop NAs from `bill_ratio` for these computations (e.g., using the argument `na.rm = T`) so you have values for each species. Which species has the greatest mean `bill_ratio`?
+
+```{r}
+# your code goes below (make sure to edit comment)
+
+```
+
+**Your answer goes here. Write sentences in bold.**
+
+------------------------------------------------------------------------
+
+### Question 6: (2 pts)
+
+Using `dplyr` functions on `penguins_2007`, remove missing values for `sex`. Pipe a `ggplot` to create a single plot showing the distribution of `body_mass_g` colored by male and female penguins, faceted by species (use the function `facet_wrap()` with the option `nrow = ` to give each species its own row). Which species shows the least sexual dimorphism (i.e., the greatest overlap of male/female size distributions)?
+
+```{r}
+# your code goes below (make sure to edit comment)
+
+```
+
+**Your answer goes here. Write sentences in bold.**
+
+------------------------------------------------------------------------
+
+### Question 7: (2 pts)
+
+Pipe a `ggplot` to `penguins_2007` to create a scatterplot of `body_mass_g` (y-axis) against `bill_ratio` (x-axis). Does it look like there is a relationship between the bill ratio and the body mass? *Note: you might see a Warning message.* What does this message refer to?*
+
+```{r}
+# your code goes below (make sure to edit comment)
+
+```
+
+**Your answer goes here. Write sentences in bold.**
+
+------------------------------------------------------------------------
+
+### Question 8: (2 pts)
+
+What if we separate each species? Duplicate the plot from the previous question and add a regression trend line with `geom_smooth(method = "lm")`. Color the points and the regression lines by species. Does the relationship between the bill ratio and the body mass changes within each species?
+
+```{r}
+# your code goes below (make sure to edit comment)
+
+```
+
+**Your answer goes here. Write sentences in bold.**
+
+------------------------------------------------------------------------
+
+### Question 9: (2 pts)
+
+Finally, let's make a plot using the original `penguins` dataset (not just the 2007 data). Forewarning: This will be very busy plot!
+
+Map `body_mass_g` to the y-axis, `flipper_length_mm` to the x-axis, `species` to color, and `island` to shape. Using `facet_wrap()`, facet the plots by `year`. Find a way to clean up the x-axis labels (e.g., reduce the amount of tick marks) using `scale_x_continuous()`. Does there appear to be a relationship between body mass and flipper length overall? Is there a relationship within each species? What happens to the distribution of flipper lengths for species over time?
+
+```{r}
+# your code goes below (make sure to edit comment)
+
+```
+
+**Your answer goes here. Write sentences in bold.**
+
+------------------------------------------------------------------------
+
+### Formatting: (2 pts)
+
+Comment your code, write full sentences, and knit your file!
+
+------------------------------------------------------------------------
+
+```{r, echo=F}
+## DO NOT DELETE THIS BLOCK!
+Sys.info()
+```

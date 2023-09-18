@@ -1,0 +1,3 @@
+"0","# your code goes below (make sure to edit comment)"
+"0","lastW <- ChickWeight[ChickWeight$Time == max(ChickWeight$Time),]"
+"0","ggplot(lastW, aes(x = Diet, y = weight)) + geom_bar(stat = ""summary"", fill = ""blue"") + xlab(""Diet"") + ylab(""Average Weight (g)"") + scale_y_continuous(breaks = seq(0,300,by = 25)) + geom_errorbar(stat = ""summary"", fun.data = mean_se, width = 0.5)"

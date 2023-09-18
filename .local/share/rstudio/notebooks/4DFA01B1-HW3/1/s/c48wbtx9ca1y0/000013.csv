@@ -1,0 +1,6 @@
+"0","# indexing for last weight (end of exp)"
+"0","lastW <- ChickWeight[ChickWeight$Time == max(ChickWeight$Time),]"
+"0","#plot for avg weight per diet"
+"0","ggplot(lastW, aes(x = Diet, y = weight)) + geom_bar(stat = ""summary"") + xlab(""Diet"") + ylab(""Average Weight (g)"") + #adding scale"
+"0","  scale_y_continuous(breaks = seq(0,300,by = 25)) "
+"0",""

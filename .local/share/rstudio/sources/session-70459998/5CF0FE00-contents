@@ -1,0 +1,15 @@
+installed.packages()
+install.packages("tinytex")
+x<-list(number=333, logical=TRUE, character="weemp womp")
+class(x[1])
+class(x[[1]])
+
+students <- c("Elena", "Jeffrey", "Su", "Carlos")
+
+grades <- c(100, 91, 85, 94)
+
+attendance <- c(1, 0.9, 0.5, 0.8)
+
+gradebook <- data.frame(students, grades, attendance)
+gradebook[gradebook$grades<95 & gradebook$attendance>.5,]
+(5>4 | 2==3) & (3!=4 & 7<10)

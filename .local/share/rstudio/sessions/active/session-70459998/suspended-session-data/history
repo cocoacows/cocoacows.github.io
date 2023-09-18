@@ -1,0 +1,512 @@
+# Notice we can map Tree to both color and linetype
+p + geom_point(size = 4) +
+geom_line(aes(group=Tree, linetype=Tree))
+# Change size of line without affecting size of point
+p + geom_point(size = 4) +
+geom_line(aes(group=Tree, linetype=Tree), size=3)
+# change theme()
+p + geom_point(size = 4) + geom_line(aes(group=Tree)) +
+theme_minimal()
+# change theme()
+p + geom_point(size = 4) + geom_line(aes(group=Tree)) +
+theme_minimal()
+# change the theme()
+p1 <- p + geom_point(size = 4) + geom_line(aes(group=Tree)) +
+theme_dark()
+p1
+# change the theme()
+p1 <- p + geom_point(size = 4) + geom_line(aes(group=Tree)) +
+theme_bw()
+p1
+# change the theme()
+p1 <- p + geom_point(size = 2) + geom_line(aes(group=Tree)) +
+theme_bw()
+p1
+# change the labels
+p1 + ggtitle("Growth of Orange Trees") +
+ylab("Circumference", ) + xlab("Age")
+# change the theme()
+p1 <- p + geom_point(size = 2) + geom_line(aes(group=Tree)) +
+theme_bw() + facet_grid()
+p1
+?diamonds
+r <- ggplot(data=diamonds, aes(carat, price, label = abb))
+r
+p1 <- p + geom_point(size = 2) + geom_line(aes(group=Tree)) +
+theme_bw()
+p1
+p1 <- p + geom_point(size = 2) + geom_line(aes(group=Tree)) +
+theme_bw() + borders()
+p1 <- p + geom_point(size = 2) + geom_line(aes(group=Tree)) +
+theme_dark()
+p1
+p1 <- p + geom_point(size = 2) + geom_line(aes(group=Tree)) + geom_ribbon() +
+theme_dark()
+p1
+p1 <- p + geom_point(size = 2) + geom_line(aes(group=Tree)) + geom_ribbon(ymin= 10, ymax=20) +
+theme_dark()
+p1
+p1 <- p + geom_point(size = 2) + geom_line(aes(group=Tree)) + geom_(rug) +
+theme_dark()
+p1 <- p + geom_point(size = 2) + geom_line(aes(group=Tree)) + geom_rug() +
+theme_dark()
+p1
+p1 <- p + geom_point(size = 2) + geom_line(aes(group=Tree)) + geom_rug() +
+theme_bw()
+p1
+library(dslabs)
+library(ggplot2)
+data(Orange)
+## Plotting distirbutions
+ggplot(data = Orange, aes(x = age, y = circumference)) + geom_boxplot()
+# Make age a factor with as.factor()
+Orange$age<-as.factor(Orange$age)
+ggplot(Orange, aes(x=age, y=circumference)) + geom_boxplot()
+# Boxplots are useful but they hide the true values
+# Overlay points + jitter with geom_jitter()
+# adds random noise so they don't overlap
+# Add transparency via alpha
+ggplot(Orange, aes(x=age, y=circumference)) + geom_boxplot() + geom_jitter(alpha=.5)
+# change color?
+ggplot(Orange, aes(x=age, y=circumference)) + geom_boxplot() +
+geom_jitter(alpha=.5, aes(color=Tree))
+# Let's collapse across Three and age (by leaving it out)
+# Try to view the distribution of tree heights using geom_histogram()
+# Just leave off the y= mapping entirely (what does a histogram have on the y-axis?)
+ggplot(Orange, aes(x=circumference)) + geom_histogram()
+# Try adding fill=age inside of the aes()
+# Why not color=age (try it)
+ggplot(Orange, aes(x=circumference, fill=age)) + geom_histogram(bins=60)
+# Let's collapse across Three and age (by leaving it out)
+# Try to view the distribution of tree heights using geom_histogram()
+# Just leave off the y= mapping entirely (what does a histogram have on the y-axis?)
+ggplot(Orange, aes(x=circumference)) + geom_histogram()
+source("~/WS8.R")
+# Try adding fill=age inside of the aes()
+# Why not color=age (try it)
+ggplot(Orange, aes(x=circumference, fill=age)) + geom_histogram(bins=60)
+?tree
+?trees
+?Orange
+source("~/WS8.R")
+source("~/WS8.R")
+source("~/WS8.R")
+source("~/WS8.R")
+source("~/WS8.R")
+source("~/WS8.R")
+source("~/WS8.R")
+source("~/WS8.R")
+# Bring the legend inside your plot!
+ggplot(Orange, aes(x=circumference, fill=age)) + geom_histogram(bins=60) +
+theme(legend.position=c(.3,.8), legend.direction = "horizontal")
+# Density plots are smoothed versions of histograms
+ggplot(Orange, aes(x=circumference, fill=age)) +
+geom_density(alpha=0.7, bw=5) +
+theme(legend.position=c(.3,.8), legend.direction = "horizontal")
+# add a rug plot to it
+ggplot(Orange, aes(x=circumference, fill=age)) +
+geom_density(alpha=0.7, bw=5) +  geom_rug() +
+theme(legend.position=c(.3,.8), legend.direction = "horizontal")
+# combine boxplot and density plot
+ggplot(Orange, aes(x=age, y=circumference, fill=age)) +
+geom_violin(trim=F, bw=10)
+# overlay boxplots
+ggplot(Orange, aes(x=age, y=circumference, fill=age)) +
+geom_violin(trim=F, bw=10) + geom_boxplot(width=.1)
+# Take a minute and poke around in this dataset
+data(msleep)
+head(msleep)
+str(msleep)
+# make a scatter plot
+p <- ggplot(msleep, aes(sleep_total, sleep_rem)) + geom_point()
+p
+# let's add geom_smooth()
+p + geom_smooth()
+# linear trend
+p + geom_smooth(method='lm')
+ggplot(msleep, aes(x=sleep_total, y=sleep_rem)) + geom_point(aes(color=vore, size=bodywt))
+?table()
+?table
+?table
+?length
+# your code goes below (make sure to edit comment)
+length(ChickWeight)
+# your code goes below (make sure to edit comment)
+length(ChickWeight.weight)
+# your code goes below (make sure to edit comment)
+length(ChickWeight$weight)
+?ChickWeight
+# your code goes below (make sure to edit comment)
+table(ChickWeight$chick)
+# your code goes below (make sure to edit comment)
+table(ChickWeight$Chick)
+table(ChickWeight$Time)
+# your code goes below (make sure to edit comment)
+length(table(ChickWeight$Chick))
+length(table(ChickWeight$Time))
+length(table(ChickWeight$Diet))
+table(ChickWeight$Diet, Time==0)
+table(ChickWeight$Diet, ChickWeight$Time==0)
+ChickWeight$Diet[ChickWeight$Time==0]
+table(ChickWeight$Diet[ChickWeight$Time==0])
+table(ChickWeight$Chick)
+# Load package
+library(ggplot2)
+# scatterplot of weight v time
+p <- ggplot(data = ChickWeight)
+p + geom_point(aes(Time, weight))
+# Load package
+library(ggplot2)
+# scatterplot of weight v time
+p <- ggplot(data = ChickWeight)
+p + geom_point(aes(Time, weight))
+xlab("weight (gm)")
+ylab("time (days)")
+ggtitle( "Chick's Weight over Time")
+# your code goes below (make sure to edit comment)
+p + geom_point(aes(col=Chick)) + geom_line(aes(group = Chick))
+# your code goes below (make sure to edit comment)
+p + geom_point(aes(color=Chick)) + geom_line(aes(group = Chick))
+# your code goes below (make sure to edit comment)
+r + geom_point(aes(color=Chick)) + geom_line(aes(group = Chick))
+# Load package
+library(ggplot2)
+# scatterplot of weight v time
+p <- ggplot(data = ChickWeight)
+p + geom_point(aes(Time, weight))+ xlab("weight (gm)") + ylab("time (days)")+ ggtitle( "Chick's Weight over Time")
+# your code goes below (make sure to edit comment)
++ geom_point(aes(color=Chick)) + geom_line(aes(group = Chick))
+# Load package
+library(ggplot2)
+# scatterplot of weight v time
+p <- ggplot(data = ChickWeight)
+p + geom_point(aes(Time, weight)) + xlab("weight (gm)") + ylab("time (days)")+ ggtitle( "Chick's Weight over Time") + geom_point(aes(color=Chick)) + geom_line(aes(group = Chick))
+# Load package
+library(ggplot2)
+# scatterplot of weight v time
+p <- ggplot(data = ChickWeight) + geom_point(aes(Time, weight)) + xlab("weight (gm)") + ylab("time (days)")+ ggtitle( "Chick's Weight over Time")
+# Load package
+library(ggplot2)
+# scatterplot of weight v time
+p <- ggplot(data = ChickWeight) + geom_point(aes(Time, weight)) + xlab("weight (gm)") + ylab("time (days)")+ ggtitle( "Chick's Weight over Time")
+p
+# your code goes below (make sure to edit comment)
+p + geom_point(aes(color=Chick)) + geom_line(aes(group = Chick))
+# your code goes below (make sure to edit comment)
+p + geom_point(aes(color = Chick)) + geom_line(aes(group = Chick))
+# your code goes below (make sure to edit comment)
+p + geom_point(Time, weight, aes(color = Chick)) + geom_line(aes(group = Chick))
+# your code goes below (make sure to edit comment)
+p + geom_point(x=Time, y=weight, aes(color = Chick)) + geom_line(aes(group = Chick))
+# your code goes below (make sure to edit comment)
+p + geom_point(x=ChickWeight$Time, y=ChickWeight$weight, aes(color = Chick)) + geom_line(aes(group = Chick))
+# your code goes below (make sure to edit comment)
+p <- p + geom_point(aes(color = Chick)) + geom_line(aes(group = Chick))
+# your code goes below (make sure to edit comment)
+ggplot(ChickWeight, aes(x=Time, y=weight, color=Chick)) +
+geom_point() + geom_line()
+# your code goes below (make sure to edit comment)
+ggplot(ChickWeight, aes(x=Time, y=weight, color=Chick), show.legend = FALSE) +
+geom_point() + geom_line()
+# your code goes below (make sure to edit comment)
+ggplot(ChickWeight, aes(x=Time, y=weight, color=Chick, show.legend = FALSE)) +
+geom_point() + geom_line()
+# your code goes below (make sure to edit comment)
+ggplot(ChickWeight, aes(x=Time, y=weight, color=Chick)) +
+geom_point() + geom_line() + theme(legend.position = "none")
+# your code goes below (make sure to edit comment)
+ggplot(ChickWeight, aes(x=Time, y=weight)) +
+geom_point(aes(color= "white")) + geom_line(aes(color = Chick)) + theme(legend.position = "none")
+# your code goes below (make sure to edit comment)
+ggplot(ChickWeight, aes(x=Time, y=weight)) +
+geom_point(aes(color= "snow")) + geom_line(aes(color = Chick)) + theme(legend.position = "none")
+# your code goes below (make sure to edit comment)
+ggplot(ChickWeight, aes(x=Time, y=weight, color = snow)) +
+geom_point(aes(color= "snow")) + geom_line(aes(color = Chick)) + theme(legend.position = "none")
+# your code goes below (make sure to edit comment)
+ggplot(ChickWeight, aes(x=Time, y=weight) +
+geom_point(color= "snow") + geom_line(aes(color = Chick)) + theme(legend.position = "none")
+# your code goes below (make sure to edit comment)
+ggplot(ChickWeight, aes(x=Time, y=weight) +
+geom_point(color= "white") + geom_line(aes(color = Chick)) + theme(legend.position = "none")
+# your code goes below (make sure to edit comment)
+ggplot(ChickWeight, aes(x=Time, y=weight)) +
+geom_point(color= "white") + geom_line(aes(color = Chick)) + theme(legend.position = "none")
+# your code goes below (make sure to edit comment)
+ggplot(ChickWeight, aes(x=Time, y=weight))  + geom_line(aes(color = Chick)) + geom_point(color= "white") + theme(legend.position = "none")
+# your code goes below (make sure to edit comment)
+ggplot(ChickWeight, aes(x=Time, y=weight))  + geom_line(aes(color = Chick)) + geom_point(color= "white") + theme(legend.position = "none")
+ChickWeight$Time
+# your code goes below (make sure to edit comment)
+ggplot(ChickWeight, aes(x=Time, y=weight))  + geom_line(aes(color = Chick)) + geom_point(color= "white") + theme(legend.position = "none")
+max(ChickWeight$Time)
+# removing color of chick points
+p <- ggplot(ChickWeight, aes(x=Time, y=weight))  + geom_line(aes(color = Chick)) + geom_point(color= "white") + theme(legend.position = "none")
+#last date to record chick weight
+max(ChickWeight$Time)
+# removing color of chick points
+p <- ggplot(ChickWeight, aes(x=Time, y=weight))  + geom_line(aes(color = Chick)) + geom_point(color= "white") + theme(legend.position = "none")
+p
+#last date to record chick weight
+max(ChickWeight$Time)
+# your code goes below (make sure to edit comment)
+p + facet_wrap(~Diet)
+?geom_smooth
+# add lineaer regression line for diets
+p <- ggplot(data = ChickWeight) + geom_point(aes(Time, weight)) + xlab("weight (gm)") + ylab("time (days)")+ ggtitle( "Chick's Weight over Time")  + geom_smooth(Diet, method = "lm")
+# add lineaer regression line for diets
+p <- ggplot(data = ChickWeight) + geom_point(aes(Time, weight)) + xlab("weight (gm)") + ylab("time (days)")+ ggtitle( "Chick's Weight over Time")  + geom_smooth(group = Diet, method = "lm")
+# add lineaer regression line for diets
+p <- ggplot(data = ChickWeight) + geom_point(aes(Time, weight)) + xlab("weight (gm)") + ylab("time (days)")+ ggtitle( "Chick's Weight over Time")  + geom_smooth(group = ChickWeight$Diet, method = "lm")
+# add lineaer regression line for diets
+p <- ggplot(data = ChickWeight) + geom_point(aes(Time, weight)) + xlab("weight (gm)") + ylab("time (days)")+ ggtitle( "Chick's Weight over Time")  + geom_smooth(group = ChickWeight$Diet, method = "lm")
+p
+# add lineaer regression line for diets
+p <- ggplot(data = ChickWeight) + geom_point(aes(Time, weight)) + xlab("weight (gm)") + ylab("time (days)")+ ggtitle( "Chick's Weight over Time")  + geom_smooth(aes(color = as.factor(Diet), se = FALSE), method = "lm")
+p
+# add lineaer regression line for diets
+p <- ggplot(data = ChickWeight) + geom_point(aes(Time, weight)) + xlab("weight (gm)") + ylab("time (days)")+ ggtitle( "Chick's Weight over Time")  + geom_smooth(method = "lm", aes(color = as.factor(Diet), se = FALSE))
+p
+# add lineaer regression line for diets
+p <- ggplot(data = ChickWeight) + geom_point(aes(Time, weight)) + xlab("weight (gm)") + ylab("time (days)")+ ggtitle( "Chick's Weight over Time")  + geom_smooth(method = "lm", aes(color = as.factor(Diet)), se = FALSE)
+p
+# add lineaer regression line for diets
+p <- ggplot(data = ChickWeight) + geom_point(aes(Time, weight)) + xlab("weight (gm)") + ylab("time (days)")+ ggtitle( "Chick's Weight over Time")  + geom_smooth(method = "lm", aes(color = as.factor(Diet)), se = FALSE)
+p
+# add lineaer regression line for diets
+p <- ggplot(data = ChickWeight) + geom_point(aes(Time, weight)) + xlab("weight (gm)") + ylab("time (days)")+ ggtitle( "Chick's Weight over Time")  + geom_smooth(method = "lm", aes(color = as.factor(Diet)), se = FALSE)
+p
+# add lineaer regression line for diets
+p <- ggplot(data = ChickWeight) + geom_point(aes(x=Time, y=weight)) + xlab("weight (gm)") + ylab("time (days)")+ ggtitle( "Chick's Weight over Time")  + geom_smooth(method = "lm", aes(color = as.factor(Diet)), se = FALSE)
+p
+# your code goes below (make sure to edit comment)
+lastTime <- ChickWeight[ChickWeight%time == max(ChickWeight%time),]
+# your code goes below (make sure to edit comment)
+lastTime <- ChickWeight[ChickWeight%time == max(ChickWeight%time)]
+# your code goes below (make sure to edit comment)
+lastTime <- ChickWeight[ChickWeight$time == max(ChickWeight$time)]
+lastTime
+#h <- ggplot(ChickWeight, aes(x = Diet)) + geom_bar()
+# your code goes below (make sure to edit comment)
+lastTime <- ChickWeight$time == max(ChickWeight$time)
+lastTime
+#h <- ggplot(ChickWeight, aes(x = Diet)) + geom_bar()
+# your code goes below (make sure to edit comment)
+lastTime <- ChickWeight[ChickWeight$time == max(ChickWeight$time),]
+#h <- ggplot(ChickWeight, aes(x = Diet)) + geom_bar()
+# your code goes below (make sure to edit comment)
+lastTime <- ChickWeight[ChickWeight$time == max(ChickWeight$time),]
+lastTime
+#h <- ggplot(ChickWeight, aes(x = Diet)) + geom_bar()
+# your code goes below (make sure to edit comment)
+lastW <- ChickWeight[ChickWeight$time == max(ChickWeight$time)]
+h <- ggplot(ChickWeight, aes(x = Diet)) + geom_bar(mean(lastW))
+# your code goes below (make sure to edit comment)
+lastW <- ChickWeight[ChickWeight$time == max(ChickWeight$time)]
+h <- ggplot(ChickWeight, aes(x = Diet)) + geom_bar(stat=mean(lastW))
+?mean
+# your code goes below (make sure to edit comment)
+lastW <- ChickWeight[ChickWeight$time == max(ChickWeight$time)]
+h <- ggplot(data = ChickWeight, aes(x = Diet)) + geom_bar(stat = mean(lastW))
+?stat
+# your code goes below (make sure to edit comment)
+lastW <- ChickWeight[ChickWeight$time == max(ChickWeight$time)]
+h <- ggplot(data = ChickWeight, aes(x = Diet)) + geom_bar(stat = "summary")
+h
+# your code goes below (make sure to edit comment)
+lastW <- ChickWeight[ChickWeight$time == max(ChickWeight$time)]
+h <- ggplot(data = ChickWeight, aes(x = Diet)) + geom_bar(stat = "summary", fun.y = "mean")
+h
+# add lineaer regression line for diets
+p <- ggplot(data = ChickWeight) + geom_point(aes(Time, weight, color = as.factor(Diet))) + xlab("weight (gm)") + ylab("time (days)")+ ggtitle( "Chick's Weight over Time")  + geom_smooth(method = "lm",  se = FALSE)
+p
+# add lineaer regression line for diets
+p <- ggplot(data = ChickWeight) + geom_point(aes(Time, weight)) + xlab("weight (gm)") + ylab("time (days)")+ ggtitle( "Chick's Weight over Time")  + geom_smooth(method = "lm", aes(color = as.factor(Diet)), se = FALSE)
+p
+# your code goes below (make sure to edit comment)
+lastW <- ChickWeight[ChickWeight$time == max(ChickWeight$time)]
+h <- ggplot(data = ChickWeight, aes(x = Diet)) + geom_bar(stat = "count")
+h
+# add lineaer regression line for diets
+p <- ggplot(data = ChickWeight) + geom_point(aes(Time, weight)) + xlab("weight (gm)") + ylab("time (days)")+ ggtitle( "Chick's Weight over Time")
+p+ geom_smooth(method = "lm", aes(color = as.factor(Diet)), se = FALSE)
+# your code goes below (make sure to edit comment)
+lastW <- ChickWeight[ChickWeight$time == max(ChickWeight$time)]
+h <- ggplot(data = ChickWeight, aes(x = Diet, y = mean(lastW))) + geom_bar(stat = "identity")
+h
+# your code goes below (make sure to edit comment)
+lastW <- ChickWeight[ChickWeight$time == max(ChickWeight$time)]
+# your code goes below (make sure to edit comment)
+lastW <- ChickWeight[ChickWeight$time == max(ChickWeight$time)]
+lastW
+lastW
+# your code goes below (make sure to edit comment)
+lastW <- ChickWeight[ChickWeight$time == max(ChickWeight$time),]
+ggplot(lastW, aes(x = Diet, y = weight)) + geom_bar(stat = "identity")
+---
+title: "HW 3"
+# Edit the file starting below
+```
+### Enter your name and EID here: Nicole Wu Nw7688
+**You will submit this homework assignment as a HTML file on Canvas.**
+*For all questions, include the R commands/functions that you used to find your answer (show R chunk). Answers without supporting code will not receive credit. Write full sentences to describe your findings.*
+------------------------------------------------------------------------
+### Question 1: (2 pts)
+The dataset `ChickWeight` contains information about the weights (in grams) of chicks on four different diets over time (measured at 2-day intervals) as the result of an experiment. The first few observations are listed below.
+```{r}
+# Save dataset as a dataframe
+ChickWeight <- as.data.frame(ChickWeight)
+# Visualize the first ten rows of the dataset
+head(ChickWeight,10)
+# Visualize the first ten rows of the dataset
+head(ChickWeight,10)
+Use some combination of `table()` and `length()` to answer the following questions:
+```{r}
+# num of distinct chicks
+length(table(ChickWeight$Chick))
+# num of distinct time points
+length(table(ChickWeight$Time))
+# num of distinct Diets
+length(table(ChickWeight$Diet))
+# num of chicks per diet in beginning of experiment
+table(ChickWeight$Diet[ChickWeight$Time==0])
+# num of distinct chicks
+length(table(ChickWeight$Chick))
+# num of distinct time points
+length(table(ChickWeight$Time))
+# num of distinct Diets
+length(table(ChickWeight$Diet))
+# num of chicks per diet in beginning of experiment
+table(ChickWeight$Diet[ChickWeight$Time==0])
+- How many distinct chicks are there?
+**There are 50 distinct chicks, 12 distinct time points, 4 distinct diet conditions. In the beginning of the experiment, 20 chicks were given Diet 1, and Diet 2, 3, and 4 were given to 10 chicks each. **
+------------------------------------------------------------------------
+### Question 2: (1 pt)
+Using the `ggplot2` package, create a simple scatterplot showing chick `weight` (on the y-axis) depending on `Time`. Label the axes including the units of the variables and give the plot a title. How does chick `weight` change over `Time`?
+```{r}
+# Load package
+library(ggplot2)
+# scatterplot of weight v time
+p <- ggplot(data = ChickWeight) + geom_point(aes(Time, weight)) + xlab("weight (gm)") + ylab("time (days)")+ ggtitle( "Chick's Weight over Time")
+p
+**The chicks' weights generally increase over time.**
+------------------------------------------------------------------------
+### Question 3: (2 pts)
+Building upon the previous plot, map `Chick` to an aesthetic that assigns a color to each chick’s data points. Add lines that connect each chick’s points together with `geom_line()` (also colored by each chick). Finally, remove the legend. Do all chicks seem to gain weight in the same manner? Why/Why not?
+```{r}
+# Weight v Time, colored by individual chicks
+ggplot(ChickWeight, aes(x=Time, y=weight, color=Chick)) +
+geom_point() + geom_line() + theme(legend.position = "none")
+# Weight v Time, colored by individual chicks
+ggplot(ChickWeight, aes(x=Time, y=weight, color=Chick)) +
+geom_point() + geom_line() + theme(legend.position = "none")
+**No, each individual chick seems to be gaining weight at a different rate. It seems like the weight gain may be related to the chick's diets.**
+### Question 4: (1 pt)
+Continue modifying the same graph by removing the color from the points only: leave the lines colored by chick, but make all of the points white. Make sure to put the points *on top of* the lines. On which day was the last value of the chicks' weight recorded?
+```{r}
+# removing color of chick points
+p <- ggplot(ChickWeight, aes(x=Time, y=weight))  + geom_line(aes(color = Chick)) + geom_point(color= "white") + theme(legend.position = "none")
+p
+#last date to record chick weight
+max(ChickWeight$Time)
+**The 21st day was the last day the chick's weight was recorded.**
+------------------------------------------------------------------------
+### Question 5: (2 pts)
+Now, facet this plot by diet. Can you tell from this new plot which diet results in greater weight? Describe how  the relationship between `weight` and `Time` changes, or not, across the different diets.
+```{r}
+#Weight v Time based on Diets
+p + facet_wrap(~Diet)
+**In Diet 1, the chicks gained weight rapidly from day 0 to day 10 and gradually gained weight from day 10 onward. The largest weight change a chick seemed to have by the end of the experiment was 300 gm and the smallest weight gain was less than 100gm. Most chicks gained weight at a constant rate throughout the experiment. A chick seemed to have died before 21 days. There is a large range of weight changes per individual chick. **
+**Diet 2 chicks generally gained weight linerally over time, with 2 exceptions. One chick had gained weight relatively quickly during days 7 and 15, and one chick experienced little/no weight gain from day 7 and onward**
+**The chicks in Diet 3 general put on more weight than all of the other diets. Chicks seemed to have more of an exponential weight gain.**
+**Chicks in Diet 4 generally gained weight linerally over time, and showed less variance compared to the chicks on other diets.**
+------------------------------------------------------------------------
+### Question 6: (2 pts)
+Go back to your plot from question 2 and fit a *linear regression line* (using `method = "lm"` in `geom_smooth()`) to the chicks in each diet with `geom_smooth()`. There should be 4 separate regression lines, one for each diet, each a separate color. Can you see more clearly which diet results in greater weight? Explain.
+# your code goes below (make sure to edit comment)
+lastW <- ChickWeight[ChickWeight$time == max(ChickWeight$time),]
+ggplot(lastW, aes(x = Diet, y = weight)) + geom_bar(stat = "identity")
+View(ChickWeight)
+ChickWeight?
+?ChickWeight
+?ChickWeight
+# your code goes below (make sure to edit comment)
+lastW <- ChickWeight[ChickWeight$Time == max(ChickWeight$Time),]
+ggplot(lastW, aes(x = Diet, y = weight)) + geom_bar(stat = "identity") + xlab("Diet") + ylab("Average Weight (g)") + scale_y_continuous(breaks = seq(0,300, 25))
+ggplot(lastW, aes(x = Diet, y = weight)) + geom_bar(stat = "identity") + xlab("Diet") + ylab("Average Weight (g)") + scale_y_continuous(breaks = seq(0,300,25)) + xlim(0,300)
+# your code goes below (make sure to edit comment)
+lastW <- ChickWeight[ChickWeight$Time == max(ChickWeight$Time),]
+ggplot(lastW, aes(x = Diet, y = weight)) + geom_bar(stat = "identity") + xlab("Diet") + ylab("Average Weight (g)") + scale_y_continuous(breaks = seq(0,300,by = 25))
+# your code goes below (make sure to edit comment)
+lastW <- ChickWeight[ChickWeight$Time == max(ChickWeight$Time),]
+ggplot(lastW, aes(x = Diet, y = weight)) + geom_bar(stat = "identity", fill = "blue") + xlab("Diet") + ylab("Average Weight (g)") + scale_y_continuous(breaks = seq(0,300,by = 25)) + geom_errorbar(stat = "summary", fun.data = mean_se, width = 0.5)
+# your code goes below (make sure to edit comment)
+lastW <- ChickWeight[ChickWeight$Time == max(ChickWeight$Time),]
+ggplot(lastW, aes(x = Diet, y = weight)) + geom_bar(stat = "summary", fill = "blue") + xlab("Diet") + ylab("Average Weight (g)") + scale_y_continuous(breaks = seq(0,300,by = 25)) + geom_errorbar(stat = "summary", fun.data = mean_se, width = 0.5)
+?mean_se_
+# your code goes below (make sure to edit comment)
+lastW <- ChickWeight[ChickWeight$Time == max(ChickWeight$Time),]
+ggplot(lastW, aes(x = Diet, y = weight)) + geom_bar(stat = "mean_se", fill = "blue") + xlab("Diet") + ylab("Average Weight (g)") + scale_y_continuous(breaks = seq(0,300,by = 25)) + geom_errorbar(stat = "summary", fun.data = mean_se, width = 0.5)
+# your code goes below (make sure to edit comment)
+# your code goes below (make sure to edit comment)
+lastW <- ChickWeight[ChickWeight$Time == max(ChickWeight$Time),]
+ggplot(lastW, aes(x = Diet, y = weight)) + geom_bar(stat = mean_se(), fill = "blue") + xlab("Diet") + ylab("Average Weight (g)") + scale_y_continuous(breaks = seq(0,300,by = 25)) + geom_errorbar(stat = "summary", fun.data = mean_se, width = 0.5)
+# your code goes below (make sure to edit comment)
+lastW <- ChickWeight[ChickWeight$Time == max(ChickWeight$Time),]
+ggplot(lastW, aes(x = Diet, y = weight)) + geom_bar(stat = "summary", fill = "blue") + xlab("Diet") + ylab("Average Weight (g)") + scale_y_continuous(breaks = seq(0,300,by = 25)) + geom_errorbar(stat = "summary", fun.data = mean_se, width = 0.5)
+# your code goes below (make sure to edit comment)
+lastW <- ChickWeight[ChickWeight$Time == max(ChickWeight$Time),]
+ggplot(lastW, aes(x = Diet, y = weight)) + geom_bar(stat = "summary") + xlab("Diet") + ylab("Average Weight (g)") + scale_y_continuous(breaks = seq(0,300,by = 25))
+# your code goes below (make sure to edit comment)
+lastW <- ChickWeight[ChickWeight$Time == max(ChickWeight$Time),]
+ggplot(lastW, aes(x = Diet, y = weight)) + geom_point(stat = "summary", size = 3, color = "red") + xlab("Diet") + ylab("Average Weight (g)") + + geom_errorbar(stat = "summary", fun.data = mean_se, width = 0.5)
+# your code goes below (make sure to edit comment)
+lastW <- ChickWeight[ChickWeight$Time == max(ChickWeight$Time),]
+ggplot(lastW, aes(x = Diet, y = weight)) + geom_point(stat = "summary", size = 3, color = "red") + xlab("Diet") + ylab("Average Weight (g)") + geom_errorbar(stat = "summary", fun.data = mean_se, width = 0.5)
+# your code goes below (make sure to edit comment)
+lastW <- ChickWeight[ChickWeight$Time == max(ChickWeight$Time),]
+ggplot(lastW, aes(x = Diet, y = weight)) + geom_point(stat = "summary", size = 5, color = "red") + xlab("Diet") + ylab("Average Weight (g)") + geom_errorbar(stat = "summary", fun.data = mean_se, width = 0.5)
+# your code goes below (make sure to edit comment)
+lastW <- ChickWeight[ChickWeight$Time == max(ChickWeight$Time),]
+ggplot(lastW, aes(x = Diet, y = weight)) + geom_errorbar(stat = "summary", fun.data = mean_se, width = 0.5) + geom_point(stat = "summary", size = 5, color = "red") + xlab("Diet") + ylab("Average Weight (g)")
+# your code goes below (make sure to edit comment)
+lastW <- ChickWeight[ChickWeight$Time == max(ChickWeight$Time),]
+ggplot(lastW, aes(x = Diet, y = weight)) + geom_errorbar(stat = "summary", fun.data = mean_se, width = 0.5) + geom_point(stat = "summary", size = 5, color = "red", shape = "x") + xlab("Diet") + ylab("Average Weight (g)")
+# your code goes below (make sure to edit comment)
+lastW <- ChickWeight[ChickWeight$Time == max(ChickWeight$Time),]
+ggplot(lastW, aes(x = Diet, y = weight)) + geom_errorbar(stat = "summary", fun.data = mean_se, width = 0.5) + geom_point(stat = "summary", size = 5, color = Diet, shape = "x") + xlab("Diet") + ylab("Average Weight (g)")
+# your code goes below (make sure to edit comment)
+lastW <- ChickWeight[ChickWeight$Time == max(ChickWeight$Time),]
+ggplot(lastW, aes(x = Diet, y = weight, color = Diet)) + geom_errorbar(stat = "summary", fun.data = mean_se, width = 0.5) + geom_point(stat = "summary", size = 5, shape = "x") + xlab("Diet") + ylab("Average Weight (g)")
+# your code goes below (make sure to edit comment)
+lastW <- ChickWeight[ChickWeight$Time == max(ChickWeight$Time),]
+ggplot(lastW, aes(x = Time, y = weight, color = Diet)) + geom_errorbar(stat = "summary", fun.data = mean_se, width = 0.5) + geom_point(stat = "summary", size = 5, shape = "x") + xlab("Diet") + ylab("Average Weight (g)")
+# your code goes below (make sure to edit comment)
+ggplot(lastW, aes(x = Time, y = weight, color = Diet)) + geom_errorbar(stat = "summary", fun.data = mean_se, width = 0.5) + geom_point(stat = "summary", size = 5, shape = "x") + xlab("Diet") + ylab("Average Weight (g)")
+# your code goes below (make sure to edit comment)
+ggplot(ChickWeight, aes(x = Time, y = weight, color = Diet)) + geom_point(stat = "summary", fun = mean, size = 5, shape = "x") + xlab("Diet") + ylab("Average Weight (g)") + geom_line(aes(color = Diet))
+# your code goes below (make sure to edit comment)
+ggplot(ChickWeight, aes(x = Time, y = weight, color = Diet)) + geom_point(stat = "summary", fun = mean, size = 5, shape = "x") + xlab("Diet") + ylab("Average Weight (g)") + geom_line(stat="summary", aes(color = Diet))
+# add lineaer regression line for diets
+ggplot(data = ChickWeight) + geom_point(aes(Time, weight)) + xlab("weight (gm)") + ylab("time (days)")+ ggtitle( "Chick's Weight over Time") + geom_smooth(method = "lm", aes(color = #as.factor(Diet)), se = FALSE)
+# add lineaer regression line for diets
+ggplot(data = ChickWeight) + geom_point(aes(Time, weight)) + xlab("weight (gm)") + ylab("time (days)")+ ggtitle( "Chick's Weight over Time") + geom_smooth(method = "lm", aes(color = as.factor(Diet)), se = FALSE)
+# add lineaer regression line for diets
+ggplot(data = ChickWeight, aes(x = Time, y = weight)) + geom_point(aes(Time, weight)) + xlab("weight (gm)") + ylab("time (days)")+ ggtitle( "Chick's Weight over Time") + geom_smooth(method = "lm", aes(color = as.factor(Diet)), se = FALSE, stat = )
+# add lineaer regression line for diets
+ggplot(data = ChickWeight, aes(x = Time, y = weight)) + geom_point(aes(Time, weight)) + xlab("weight (gm)") + ylab("time (days)")+ ggtitle( "Chick's Weight over Time") + geom_smooth(method = "lm", aes(color = as.factor(Diet)), se = FALSE, stat = ) + scale_fill_discrete(name = "Diet")
+# add lineaer regression line for diets
+ggplot(data = ChickWeight, aes(x = Time, y = weight)) + geom_point(aes(Time, weight)) + xlab("weight (gm)") + ylab("time (days)")+ ggtitle( "Chick's Weight over Time") + geom_smooth(method = "lm", aes(color = as.factor(Diet)), se = FALSE, stat = ) + scale_fill_discrete(name = "Diet")
+# add lineaer regression line for diets
+ggplot(data = ChickWeight, aes(x = Time, y = weight)) + geom_point(aes(Time, weight)) + xlab("weight (gm)") + ylab("time (days)")+ ggtitle( "Chick's Weight over Time") + geom_smooth(method = "lm", aes(color = as.factor(Diet)), se = FALSE, stat = )
+# add lineaer regression line for diets
+ggplot(data = ChickWeight, aes(x = Time, y = weight)) + geom_point(aes(Time, weight)) + xlab("weight (gm)") + ylab("time (days)")+ ggtitle( "Chick's Weight over Time") + geom_smooth(method = "lm", aes(color = as.factor(Diet)), se = FALSE)
+# add lineaer regression line for diets
+ggplot(data = ChickWeight, aes(x = Time, y = weight)) + geom_point(aes(Time, weight)) + xlab("weight (gm)") + ylab("time (days)")+ ggtitle( "Chick's Weight over Time") + geom_smooth(method = "lm", aes(color = as.factor(Diet)), se = FALSE) +scale_color_discrete("Continents")
+# add lineaer regression line for diets
+ggplot(data = ChickWeight, aes(x = Time, y = weight)) + geom_point(aes(Time, weight)) + xlab("weight (gm)") + ylab("time (days)")+ ggtitle( "Chick's Weight over Time") + geom_smooth(method = "lm", aes(color = as.factor(Diet)), se = FALSE) +scale_color_discrete("Diets")
+# indexing for last weight (end of exp)
+lastW <- ChickWeight[ChickWeight$Time == max(ChickWeight$Time),]
+#plot for avg weight per diet
+ggplot(lastW, aes(x = Diet, y = weight)) + geom_bar(stat = "summary") + xlab("Diet") + ylab("Average Weight (g)") + #adding scale
+scale_y_continuous(breaks = seq(0,300,by = 25))

@@ -1,0 +1,10 @@
+"0","# Weight v Time, colored by individual chicks
+ggplot(ChickWeight, aes(x=Time, y=weight, color=Chick)) +
+geom_point() + geom_line() + theme(legend.position = ""none"")
+# Weight v Time, colored by individual chicks
+ggplot(ChickWeight, aes(x=Time, y=weight, color=Chick)) +
+geom_point() + geom_line() + theme(legend.position = ""none"")
+**No, each individual chick seems to be gaining weight at a different rate. It seems like the weight gain may be related to the chick's diets.**
+"
+"2","Error: unexpected '^' in ""**""
+"
