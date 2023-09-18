@@ -120,3 +120,307 @@ drwxr-xr-x 2 nw7688 SDS322E_AF_Fall2023    6 Sep 18 13:52  [01;34mworksheet[0m
 bash: /stor/home/nw7688/homepage: Is a directory
 ]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ [K]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ [K]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ git add . 
 warning: could not open directory '.zfs/shares/': Stale file handle
+]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ git commit -m "my first commit"
+[master (root-commit) 7dafc78] my first commit
+ Committer: Nicole Wu <nw7688@educcomp04.ccbb.utexas.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 261 files changed, 14878 insertions(+)
+ create mode 100644 .bash_history
+ create mode 100644 .bash_logout
+ create mode 100644 .bashrc
+ create mode 100644 .config/rstudio/rstudio-prefs.json
+ create mode 100644 .local/share/rstudio/addin_registry
+ create mode 100644 .local/share/rstudio/client-state/environment-grid.persistent
+ create mode 100644 .local/share/rstudio/client-state/source-column-manager.persistent
+ create mode 100644 .local/share/rstudio/client-state/themes.persistent
+ create mode 100644 .local/share/rstudio/client-state/workbenchp.persistent
+ create mode 100644 .local/share/rstudio/history_database
+ create mode 100644 .local/share/rstudio/log/rsession-nw7688.1.log
+ create mode 100644 .local/share/rstudio/log/rsession-nw7688.2.log
+ create mode 100644 .local/share/rstudio/log/rsession-nw7688.3.log
+ create mode 100644 .local/share/rstudio/log/rsession-nw7688.4.log
+ create mode 100644 .local/share/rstudio/log/rsession-nw7688.5.log
+ create mode 100644 .local/share/rstudio/log/rsession-nw7688.6.log
+ create mode 100644 .local/share/rstudio/log/rsession-nw7688.7.log
+ create mode 100644 .local/share/rstudio/log/rsession-nw7688.log
+ create mode 100644 .local/share/rstudio/monitored/lists/command_palette_mru
+ create mode 100644 .local/share/rstudio/monitored/lists/file_mru
+ create mode 100644 .local/share/rstudio/monitored/lists/help_history_links
+ create mode 100644 .local/share/rstudio/monitored/lists/plot_publish_mru
+ create mode 100644 .local/share/rstudio/monitored/lists/project_mru
+ create mode 100644 .local/share/rstudio/monitored/lists/user_dictionary
+ create mode 100644 .local/share/rstudio/notebooks/2A9222F2-index/1/s/chunks.json
+ create mode 100644 .local/share/rstudio/notebooks/3B140067-HW4/1/1ACF2F1770459998/chunks.json
+ create mode 100644 .local/share/rstudio/notebooks/4DFA01B1-HW3/1/1ACF2F1770459998/chunks.json
+ create mode 100644 .local/share/rstudio/notebooks/4DFA01B1-HW3/1/s/c2gjwxoub9p2m/000015.csv
+ create mode 100644 .local/share/rstudio/notebooks/4DFA01B1-HW3/1/s/c2gjwxoub9p2m/000016.metadata
+ create mode 100644 .local/share/rstudio/notebooks/4DFA01B1-HW3/1/s/c2gjwxoub9p2m/000016.png
+ create mode 100644 .local/share/rstudio/notebooks/4DFA01B1-HW3/1/s/c2gjwxoub9p2m/000016.snapshot
+ create mode 100644 .local/share/rstudio/notebooks/4DFA01B1-HW3/1/s/c48wbtx9ca1y0/000013.csv
+ create mode 100644 .local/share/rstudio/notebooks/4DFA01B1-HW3/1/s/c48wbtx9ca1y0/000014.metadata
+ create mode 100644 .local/share/rstudio/notebooks/4DFA01B1-HW3/1/s/c48wbtx9ca1y0/000014.png
+ create mode 100644 .local/share/rstudio/notebooks/4DFA01B1-HW3/1/s/c48wbtx9ca1y0/000014.snapshot
+ create mode 100644 .local/share/rstudio/notebooks/4DFA01B1-HW3/1/s/c5j8qejup476g/00000f.csv
+ create mode 100644 .local/share/rstudio/notebooks/4DFA01B1-HW3/1/s/c5j8qejup476g/000010.error
+ create mode 100644 .local/share/rstudio/notebooks/4DFA01B1-HW3/1/s/c5l076w1js1ka/000031.metadata
+ create mode 100644 .local/share/rstudio/notebooks/4DFA01B1-HW3/1/s/c5l076w1js1ka/000031.png
+ create mode 100644 .local/share/rstudio/notebooks/4DFA01B1-HW3/1/s/c5l076w1js1ka/000031.snapshot
+ create mode 100644 .local/share/rstudio/notebooks/4DFA01B1-HW3/1/s/c5l076w1js1ka/000032.csv
+ create mode 100644 .local/share/rstudio/notebooks/4DFA01B1-HW3/1/s/c5l076w1js1ka/000033.error
+ create mode 100644 .local/share/rstudio/notebooks/4DFA01B1-HW3/1/s/c5l076w1js1ka/000034.metadata
+ create mode 100644 .local/share/rstudio/notebooks/4DFA01B1-HW3/1/s/c5l076w1js1ka/000034.png
+ create mode 100644 .local/share/rstudio/notebooks/4DFA01B1-HW3/1/s/c717mpn0em2n4/000017.csv
+ create mode 100644 .local/share/rstudio/notebooks/4DFA01B1-HW3/1/s/c717mpn0em2n4/000018.metadata
+ create mode 100644 .local/share/rstudio/notebooks/4DFA01B1-HW3/1/s/c717mpn0em2n4/000018.png
+ create mode 100644 .local/share/rstudio/notebooks/4DFA01B1-HW3/1/s/c717mpn0em2n4/000018.snapshot
+ create mode 100644 .local/share/rstudio/notebooks/4DFA01B1-HW3/1/s/c9759xi92igvv/000026.csv
+ create mode 100644 .local/share/rstudio/notebooks/4DFA01B1-HW3/1/s/cbj5354vg7rhb/00001b.csv
+ create mode 100644 .local/share/rstudio/notebooks/4DFA01B1-HW3/1/s/cbj5354vg7rhb/00001c.metadata
+ create mode 100644 .local/share/rstudio/notebooks/4DFA01B1-HW3/1/s/cbj5354vg7rhb/00001c.png
+ create mode 100644 .local/share/rstudio/notebooks/4DFA01B1-HW3/1/s/cbj5354vg7rhb/00001c.snapshot
+ create mode 100644 .local/share/rstudio/notebooks/4DFA01B1-HW3/1/s/chunks.json
+ create mode 100644 .local/share/rstudio/notebooks/4DFA01B1-HW3/1/s/cnlajzhsr1axi/000012.metadata
+ create mode 100644 .local/share/rstudio/notebooks/4DFA01B1-HW3/1/s/cnlajzhsr1axi/000012.rdf
+ create mode 100644 .local/share/rstudio/notebooks/4DFA01B1-HW3/1/s/cnlajzhsr1axi/000013.csv
+ create mode 100644 .local/share/rstudio/notebooks/4DFA01B1-HW3/1/s/cp0a05p8m94k9/000015.csv
+ create mode 100644 .local/share/rstudio/notebooks/4DFA01B1-HW3/1/s/cr5y3xb2ta93f/000042.metadata
+ create mode 100644 .local/share/rstudio/notebooks/4DFA01B1-HW3/1/s/cr5y3xb2ta93f/000042.png
+ create mode 100644 .local/share/rstudio/notebooks/4DFA01B1-HW3/1/s/cr5y3xb2ta93f/000042.snapshot
+ create mode 100644 .local/share/rstudio/notebooks/4DFA01B1-HW3/1/s/cu3gvwg01ugm9/00001c.metadata
+ create mode 100644 .local/share/rstudio/notebooks/4DFA01B1-HW3/1/s/cu3gvwg01ugm9/00001c.png
+ create mode 100644 .local/share/rstudio/notebooks/4DFA01B1-HW3/1/s/cu3gvwg01ugm9/00001c.snapshot
+ create mode 100644 .local/share/rstudio/notebooks/4DFA01B1-HW3/1/s/cuz1we5fct99h/000013.metadata
+ create mode 100644 .local/share/rstudio/notebooks/4DFA01B1-HW3/1/s/cuz1we5fct99h/000013.png
+ create mode 100644 .local/share/rstudio/notebooks/4DFA01B1-HW3/1/s/cuz1we5fct99h/000013.snapshot
+ create mode 100644 .local/share/rstudio/notebooks/patch-chunk-names
+ create mode 100644 .local/share/rstudio/notebooks/paths
+ create mode 100644 .local/share/rstudio/pcs/files-pane.pper
+ create mode 100644 .local/share/rstudio/pcs/packages-pane.pper
+ create mode 100644 .local/share/rstudio/pcs/source-pane.pper
+ create mode 100644 .local/share/rstudio/pcs/windowlayoutstate.pper
+ create mode 100644 .local/share/rstudio/pcs/workbench-pane.pper
+ create mode 100644 .local/share/rstudio/persistent-state
+ create mode 100644 .local/share/rstudio/projects/none/console07/1FFCA71B
+ create mode 100644 .local/share/rstudio/projects/none/console07/1FFCA71B.env
+ create mode 100644 .local/share/rstudio/projects/none/console07/6A525C00
+ create mode 100644 .local/share/rstudio/projects/none/console07/6A525C00.env
+ create mode 100644 .local/share/rstudio/projects/none/console07/INDEX001
+ create mode 100644 .local/share/rstudio/projects_settings/last-project-path
+ create mode 100644 .local/share/rstudio/projects_settings/next-session-project
+ create mode 100644 .local/share/rstudio/projects_settings/project-id-mappings
+ create mode 100644 .local/share/rstudio/rstudio-server.json
+ create mode 100644 .local/share/rstudio/saved_source_markers
+ create mode 100644 .local/share/rstudio/sessions/active/session-70459998/graphics-r3/INDEX
+ create mode 100644 .local/share/rstudio/sessions/active/session-70459998/graphics-r3/empty.png
+ create mode 100644 .local/share/rstudio/sessions/active/session-70459998/properites/activity_state
+ create mode 100644 .local/share/rstudio/sessions/active/session-70459998/properites/blocking_suspend
+ create mode 100644 .local/share/rstudio/sessions/active/session-70459998/properites/created
+ create mode 100644 .local/share/rstudio/sessions/active/session-70459998/properites/editor
+ create mode 100644 .local/share/rstudio/sessions/active/session-70459998/properites/executing
+ create mode 100644 .local/share/rstudio/sessions/active/session-70459998/properites/initial
+ create mode 100644 .local/share/rstudio/sessions/active/session-70459998/properites/label
+ create mode 100644 .local/share/rstudio/sessions/active/session-70459998/properites/last-used
+ create mode 100644 .local/share/rstudio/sessions/active/session-70459998/properites/last_resumed
+ create mode 100644 .local/share/rstudio/sessions/active/session-70459998/properites/last_state_updated
+ create mode 100644 .local/share/rstudio/sessions/active/session-70459998/properites/launch-parameters
+ create mode 100644 .local/share/rstudio/sessions/active/session-70459998/properites/project
+ create mode 100644 .local/share/rstudio/sessions/active/session-70459998/properites/r-version
+ create mode 100644 .local/share/rstudio/sessions/active/session-70459998/properites/r-version-home
+ create mode 100644 .local/share/rstudio/sessions/active/session-70459998/properites/r-version-label
+ create mode 100644 .local/share/rstudio/sessions/active/session-70459998/properites/running
+ create mode 100644 .local/share/rstudio/sessions/active/session-70459998/properites/save_prompt_required
+ create mode 100644 .local/share/rstudio/sessions/active/session-70459998/properites/suspend_timestamp
+ create mode 100644 .local/share/rstudio/sessions/active/session-70459998/properites/working-dir
+ create mode 100644 .local/share/rstudio/sessions/active/session-70459998/rmd-outputs
+ create mode 100644 .local/share/rstudio/sessions/active/session-70459998/session-persistent-state
+ create mode 100644 .local/share/rstudio/sessions/active/session-70459998/suspended-session-data/console_actions
+ create mode 100644 .local/share/rstudio/sessions/active/session-70459998/suspended-session-data/environment
+ create mode 100644 .local/share/rstudio/sessions/active/session-70459998/suspended-session-data/environment_vars
+ create mode 100644 .local/share/rstudio/sessions/active/session-70459998/suspended-session-data/history
+ create mode 100644 .local/share/rstudio/sessions/active/session-70459998/suspended-session-data/libpaths
+ create mode 100644 .local/share/rstudio/sessions/active/session-70459998/suspended-session-data/options
+ create mode 100644 .local/share/rstudio/sessions/active/session-70459998/suspended-session-data/rversion
+ create mode 100644 .local/share/rstudio/sessions/active/session-70459998/suspended-session-data/search_path/package_paths
+ create mode 100644 .local/share/rstudio/sessions/active/session-70459998/suspended-session-data/search_path/search_path_elements
+ create mode 100644 .local/share/rstudio/sessions/active/session-70459998/suspended-session-data/settings
+ create mode 100644 .local/share/rstudio/sources/prop/1306894A
+ create mode 100644 .local/share/rstudio/sources/prop/17A746F5
+ create mode 100644 .local/share/rstudio/sources/prop/3798269E
+ create mode 100644 .local/share/rstudio/sources/prop/578F8B2F
+ create mode 100644 .local/share/rstudio/sources/prop/5D0673EB
+ create mode 100644 .local/share/rstudio/sources/prop/65AD541B
+ create mode 100644 .local/share/rstudio/sources/prop/72DFF9A5
+ create mode 100644 .local/share/rstudio/sources/prop/8664AA0D
+ create mode 100644 .local/share/rstudio/sources/prop/873EFC6A
+ create mode 100644 .local/share/rstudio/sources/prop/8CBCB98C
+ create mode 100644 .local/share/rstudio/sources/prop/8D3E9FE3
+ create mode 100644 .local/share/rstudio/sources/prop/C1B4246C
+ create mode 100644 .local/share/rstudio/sources/prop/D4F9CD0A
+ create mode 100644 .local/share/rstudio/sources/prop/DBFAA8C4
+ create mode 100644 .local/share/rstudio/sources/prop/E2B58E0E
+ create mode 100644 .local/share/rstudio/sources/prop/E55D508D
+ create mode 100644 .local/share/rstudio/sources/prop/INDEX
+ create mode 100644 .local/share/rstudio/sources/session-70459998/04B16D5E
+ create mode 100644 .local/share/rstudio/sources/session-70459998/04B16D5E-contents
+ create mode 100644 .local/share/rstudio/sources/session-70459998/0C363B57-contents
+ create mode 100644 .local/share/rstudio/sources/session-70459998/3D701744-contents
+ create mode 100644 .local/share/rstudio/sources/session-70459998/464358F8
+ create mode 100644 .local/share/rstudio/sources/session-70459998/464358F8-contents
+ create mode 100644 .local/share/rstudio/sources/session-70459998/4E9F9FD4
+ create mode 100644 .local/share/rstudio/sources/session-70459998/4E9F9FD4-contents
+ create mode 100644 .local/share/rstudio/sources/session-70459998/5CF0FE00-contents
+ create mode 100644 .local/share/rstudio/sources/session-70459998/5D140A8D-contents
+ create mode 100644 .local/share/rstudio/sources/session-70459998/61F4BFB5-contents
+ create mode 100644 .local/share/rstudio/sources/session-70459998/7CD8FAA1-contents
+ create mode 100644 .local/share/rstudio/sources/session-70459998/7FCCB200-contents
+ create mode 100644 .local/share/rstudio/sources/session-70459998/86BBA7AE-contents
+ create mode 100644 .local/share/rstudio/sources/session-70459998/8FE1E05B-contents
+ create mode 100644 .local/share/rstudio/sources/session-70459998/9CAE6F45
+ create mode 100644 .local/share/rstudio/sources/session-70459998/9CAE6F45-contents
+ create mode 100644 .local/share/rstudio/sources/session-70459998/A13A1434-contents
+ create mode 100644 .local/share/rstudio/sources/session-70459998/A95370B2-contents
+ create mode 100644 .local/share/rstudio/sources/session-70459998/AE3DFF40-contents
+ create mode 100644 .local/share/rstudio/sources/session-70459998/B6175392-contents
+ create mode 100644 .local/share/rstudio/sources/session-70459998/BDE22285-contents
+ create mode 100644 .local/share/rstudio/sources/session-70459998/DC7EC92C-contents
+ create mode 100644 .local/share/rstudio/sources/session-70459998/DCE63C57-contents
+ create mode 100644 .local/share/rstudio/sources/session-70459998/F35BC70C-contents
+ create mode 100644 .local/share/rstudio/sources/session-70459998/F6AA3CF3-contents
+ create mode 100644 .local/share/rstudio/sources/session-70459998/lock_file
+ create mode 100644 .profile
+ create mode 100644 HW/HW1.Rmd
+ create mode 100644 HW/HW1.html
+ create mode 100644 HW/HW2.Rmd
+ create mode 100644 HW/HW2.html
+ create mode 100644 HW/HW3.Rmd
+ create mode 100644 HW/HW3.html
+ create mode 100644 HW4.Rmd
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/DESCRIPTION
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/INDEX
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/Meta/Rd.rds
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/Meta/data.rds
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/Meta/features.rds
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/Meta/hsearch.rds
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/Meta/links.rds
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/Meta/nsInfo.rds
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/Meta/package.rds
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/NAMESPACE
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/R/dslabs
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/R/dslabs.rdb
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/R/dslabs.rdx
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/data/Rdata.rdb
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/data/Rdata.rds
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/data/Rdata.rdx
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/extdata/2010_bigfive_regents.xls
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/extdata/HRlist2.txt
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/extdata/RD-Mortality-Report_2015-18-180531.pdf
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/extdata/carbon_emissions.csv
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/extdata/fertility-two-countries-example.csv
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/extdata/life-expectancy-and-fertility-two-countries-example.csv
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/extdata/murders.csv
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/extdata/olive.csv
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/extdata/ssa-death-probability.csv
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/help/AnIndex
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/help/aliases.rds
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/help/dslabs.rdb
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/help/dslabs.rdx
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/help/paths.rds
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/html/00Index.html
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/html/R.css
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/script/make-admissions.R
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/script/make-brca.R
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/script/make-brexit_polls.R
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/script/make-death_prob.R
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/script/make-divorce_margarine.R
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/script/make-gapminder-rdas.R
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/script/make-greenhouse_gases.R
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/script/make-historic_co2.R
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/script/make-mice_weights.R
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/script/make-mnist_27.R
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/script/make-movielens.R
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/script/make-murders-rda.R
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/script/make-na_example-rda.R
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/script/make-nyc_regents_scores.R
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/script/make-olive.R
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/script/make-outlier_example.R
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/script/make-polls_2008.R
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/script/make-polls_us_election_2016.R
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/script/make-reported_heights-rda.R
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/script/make-research_funding_rates.R
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/script/make-stars.R
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/script/make-temp_carbon.R
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/script/make-tissue-gene-expression.R
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/script/make-trump_tweets.R
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/script/make-weekly_us_contagious_diseases.R
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/dslabs/script/save-gapminder-example-csv.R
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/tinytex/CITATION
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/tinytex/DESCRIPTION
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/tinytex/INDEX
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/tinytex/LICENSE
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/tinytex/Meta/Rd.rds
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/tinytex/Meta/features.rds
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/tinytex/Meta/hsearch.rds
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/tinytex/Meta/links.rds
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/tinytex/Meta/nsInfo.rds
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/tinytex/Meta/package.rds
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/tinytex/NAMESPACE
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/tinytex/NEWS.Rd
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/tinytex/R/tinytex
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/tinytex/R/tinytex.rdb
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/tinytex/R/tinytex.rdx
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/tinytex/help/AnIndex
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/tinytex/help/aliases.rds
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/tinytex/help/paths.rds
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/tinytex/help/tinytex.rdb
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/tinytex/help/tinytex.rdx
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/tinytex/html/00Index.html
+ create mode 100644 R/x86_64-pc-linux-gnu-library/4.3/tinytex/html/R.css
+ create mode 100644 class WS/Hello World.Rmd
+ create mode 100644 class WS/Hello-World.html
+ create mode 100644 class WS/WS1.Rmd
+ create mode 100644 class WS/WS1.html
+ create mode 100644 class WS/WS6.R
+ create mode 100644 homepage/index.Rmd
+ create mode 100644 homepage/index.html
+ create mode 100644 worksheet/GettingStarted.R
+ create mode 100644 worksheet/WS5.R
+ create mode 100644 worksheet/WS7.R
+ create mode 100644 worksheet/WS8.R
+]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ git branch -M main
+]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ git remote add origin https://github.com/cocoacows/cocoacows.github.io.giy[Kt
+]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ git push origin main
+Username for 'https://github.com': cocoacows
+Password for 'https://cocoacows@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/cocoacows/cocoacows.github.io.git/'
+]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ git push origin main
+Username for 'https://github.com': cocoacows
+Password for 'https://cocoacows@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/cocoacows/cocoacows.github.io.git/'
+]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ gi p[K[K[Kt [K[Kit pish[K[K[Kush origin main'[K
+Username for 'https://github.com': cocoaocws     acows
+Password for 'https://cocoacows@github.com': 
+remote: Repository not found.
+fatal: repository 'https://github.com/cocoacows/cocoacows.github.io.git/' not found
+]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ [K]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ git push origin main
+Username for 'https://github.com': cocoacows
+Password for 'https://cocoacows@github.com': 
+remote: Repository not found.
+fatal: repository 'https://github.com/cocoacows/cocoacows.github.io.git/' not found
+]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ cd ~
+]0;/stor/home/nw7688]0;nw7688@educcomp04: ~[01;32mnw7688@educcomp04[00m:[01;34m~[00m$ git add . 
+warning: could not open directory '.zfs/shares/': Stale file handle
